@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application</title>
+</head>
+<body>
+
+<h1>Job Application Form</h1>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>
+            Full Name:<br>
+            <input type="text" name="fullname" required>
+        </label><br><br>
+
+        <label>
+            Email Address:<br>
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>
+            Phone Number:<br>
+            <input type="tel" name="phone" required>
+        </label><br><br>
+
+        <label>
+            Date of Birth:<br>
+            <input type="date" name="dob">
+        </label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Job Details</legend>
+
+        <label>
+            Position Applied For:<br>
+            <input type="text" name="position" required>
+        </label><br><br>
+
+        <label>
+            Employment Type:<br>
+            <input type="radio" name="employment" value="full-time"> Full-time<br>
+            <input type="radio" name="employment" value="part-time"> Part-time<br>
+            <input type="radio" name="employment" value="internship"> Internship
+        </label><br><br>
+
+        <label>
+            Years of Experience:<br>
+            <input type="number" name="experience" min="0">
+        </label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Skills</legend>
+
+        <label>
+            <input type="checkbox" name="skills" value="html"> HTML
+        </label><br>
+        <label>
+            <input type="checkbox" name="skills"
+            value="css"> CSS
+        </label><br>
+        <label>
+            <input type="checkbox" name="skills" value="javascript"> JavaScript
+        </label><br>
+        <label>
+            <input type="checkbox" name="skills" value="other"> Other
+        </label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <label>
+            Why should we hire you?<br>
+            <textarea name="message" rows="5" cols="50"></textarea>
+        </label>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Reset Form">
+
+</form>
+
+</body>
+</html>
